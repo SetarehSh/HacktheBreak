@@ -1,0 +1,35 @@
+nav{
+    width:100%;
+    height: 10vh;
+    display: block;
+    background-color: brown;
+}
+.innerHeader{
+    width: 1000px;
+    height: 100%;
+    display: block;
+    background-color: wheat;
+    margin: auto;
+}
+
+.title{
+    height: 100%;
+    display: block;
+    float:left;
+}
+
+.title h1{
+    color: black;
+    vertical-align: middle;
+
+}
+
+.navBar{
+    float: right;
+    height: 100%;
+    list-style-type: none;
+}
+
+.navBar li{
+
+}
