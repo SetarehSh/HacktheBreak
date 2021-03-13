@@ -1,0 +1,17 @@
+
+
+
+.options{
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+   
+}
+.options li{
+    background-color: rgb(247, 240, 205);
+    border-radius: 25px;
+    padding: 2vh;
+    margin: 2em 0;
+    
+}
