@@ -1,0 +1,26 @@
+{
+    "farmers":[
+        {
+            "name":"Westcoast Farmers", 
+            "foods": [
+                "apple",
+                "mushroom",
+                "onion"
+            ]
+        },
+        {
+            "name":"Mountain Valley", 
+            "foods": [
+                "chicken",
+                "pork",
+                "beef"
+            ]
+        },
+        {
+            "name":"Crunchy Farms", 
+            "foods": [
+                "apple"
+            ]
+        }
+      ]
+}

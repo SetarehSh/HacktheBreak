@@ -3,26 +3,50 @@ inputList = []
 
 function addFoodType(){
     input = document.forms["searchform"]["searchbar"].value;
-    input = input.toUpperCase()
+    input = input.toLowerCase();
 
-    inputValue = foodType[input]
+    inputList.push(input);
 
-    inputList.push(input)
-
-    console.log(inputList)
-
-    searchForFood(inputValue)
-
+    console.log(inputList);
     //TODO: Add selected food items to a list to display. Search button will do the search
 }
 
-function searchForFood(input){
+function searchForFood(){
     // Adds the query string to the URL
-    window.location.href = "results.html?" + input
-    //TODO: Set up searching for multiple terms.
+    if(inputList.length == 0){
+        console.log("No provided search terms!");
+    } else {
+
+        queryString = "results.html?q=";
+
+        for(var i = 0; i < inputList.length; i++){
+            queryString += encodeURIComponent(inputList[i].toLowerCase().replace(/[,]/, '-')) + ",";
+        }
+
+        queryString = queryString.substring(0, queryString.length - 1); //Trim last +
+        
+        console.log(queryString);
+        
+        window.location.href = queryString;
+        //TODO: Set up searching for multiple terms.
+
+    }
 }
 
+// When the submit button pressed, send to results
 $("#searchform").submit(function(e) {
-    e.preventDefault()
-    addFoodType();
+    e.preventDefault();
+    searchForFood();
+});
+
+
+// When the enter button is pressed, run addFoodType()
+$(document).ready(function() {
+  $(window).keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      addFoodType();
+      return false;
+    }
+  });
 });
