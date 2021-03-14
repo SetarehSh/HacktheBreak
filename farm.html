@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Farm</title>
+  <meta charset="utf-8" />
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<!--Shows a placeholder listing. Contents are dynamically changed through farm.js-->
+<body>
+  <div id="content" class="content">
+
+    <header>
+      <h1 id="listingTitle">Listing Title</h1>
+    </header>
+
+    <div class="body">
+        <!--I made contaiers for everything, but they are not necessary. 
+            Make sure to keep the IDs on the buttom, img and span to keep funcitonality.-->
+        <div id="listingButtonContainer">
+            <button id="listingButton" type="submit" value="Submit">Message</button>
+        </div>
+
+        <div id="listingImageContainer">
+            <img id='listingImage' src='/images/placeholder.png'>
+        </div>
+
+        <div id="listingDescriptionContainer">
+            <span id=listingDescription>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis non neque at suscipit. Curabitur vel velit purus. Nam viverra a orci eu ultricies. Proin nisi erat, tincidunt nec odio in, imperdiet sodales ante. Fusce at consequat quam, et ullamcorper ante. Mauris gravida nulla eu euismod facilisis. Aenean tincidunt vestibulum massa, ut laoreet justo congue ut.</span>
+        </div>
+
+        <div id="listingMapContainer">
+            
+        </div>
+    </div>
+
+    <script src="scripts/redir.js"></script>
+    <script src="scripts/farm.js"></script>
+  </div>
+
+</body>
+
+</html>
