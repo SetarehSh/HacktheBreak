@@ -18,7 +18,7 @@ nav ul {
     display: flex;
     list-style-type: none;
     white-space: nowrap;
-    margin-right: 30px;
+    margin-right: 40px;
 }
 
 nav a {
@@ -27,24 +27,29 @@ nav a {
     font-size: calc(10px + 1vh);
     text-transform: uppercase;
     text-decoration: none;
-    padding: 16px;
+    padding: 20px;
     
 }
+#logo {
+    margin-left: 40px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    max-height: 250px;
+    width: auto;
+}
 
+#logo:hover{
+    border-style: none;
+
+}
 nav a:hover {
     color: grey;
     border-top-style: solid;
     border-bottom-style: solid;
-    text-shadow: darkorange;
+    
 }
 
-#logo {
-    margin-left: 150px;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    height: 35vh;
-    width: auto;
-}
+
 
 #home:hover {
     border-bottom-style: none;
