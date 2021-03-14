@@ -2,7 +2,7 @@
 body {
     background-color: #FFFFFF;
     overflow-x:hidden;
-    font-size: calc(10px + 1vh);
+    font-size: calc(15px + 1vh);
     font-family: 'Pridi';
     
 }
@@ -19,9 +19,11 @@ body {
 .options{
     list-style-type: none;
     justify-content: space-evenly;
-    padding: 0;
-    margin: 0;
-  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    
    
 }
 .options li{
@@ -42,7 +44,25 @@ h1{
 }
 
 #farmer1{
-    padding-left: 200px;
-    /* padding-right: 200px; */
-    margin:auto;
+    max-height: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
 }   
+
+button {
+    border-radius: 12px;
+    min-width: calc(150px + 1px);
+    min-height: calc(40px + 1px);
+    color: black;
+    background-color: lightsalmon;
+    font-size: calc(13px + 1vh);
+    font-family: 'Pridi';
+    margin-bottom: 10px;
+}
+#searchBar {
+    border-radius: 12px;
+    height: 30px;
+    width: 300px;
+}
