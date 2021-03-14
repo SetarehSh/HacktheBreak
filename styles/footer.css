@@ -6,6 +6,7 @@
 }
 
 footer {
+    margin-top: 90px;
     position: relative;
     bottom: 0px;
     display: flex;
@@ -15,6 +16,7 @@ footer {
     width:100%;
     color: #0B0F32;
     font-size: calc(8px + 1vh);
+    font-family: 'Pridi';
 
 }
 
