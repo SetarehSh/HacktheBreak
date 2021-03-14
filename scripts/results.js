@@ -1,6 +1,4 @@
 //TODO: Display all matching farms in infinite scrolling fashion
-//TODO: Farms data class
-
 
 function getUrlParams(){
     var urlParams = new URLSearchParams(window.location.search);
@@ -10,7 +8,7 @@ function getUrlParams(){
     return foods.split(",");
 }
 
-function readJsonToData(file, callback) {
+function readJson(file, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
     rawFile.open("GET", file, true);
@@ -30,7 +28,7 @@ function readJsonToData(file, callback) {
 
 function getMatchingFarmers(){
     //Read JSON file for list of farmers
-    readJsonToData("/scripts/farmers.json", function(data){
+    readJson("/scripts/farmers.json", function(data){
         var matchingFarmers = []
         paramList = getUrlParams();
         
@@ -81,7 +79,6 @@ function displayResults(matchingFarmers){
         div.append(farmerHtml);
 
         farmerHtml = "";
-
     }
 }
 
