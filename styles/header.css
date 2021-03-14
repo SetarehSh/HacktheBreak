@@ -9,7 +9,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: darkgray;
+    background-color: lightgray;
     z-index: 5;
 }
 
@@ -21,9 +21,9 @@ nav ul {
 }
 
 nav a {
-    color: black; 
+    color: #0B0F32; 
     font-family: 'Pridi', serif;
-    font-size: calc(15px + 1vh);
+    font-size: calc(13px + 1vh);
     text-transform: uppercase;
     text-decoration: none;
     padding: 16px;
@@ -31,10 +31,11 @@ nav a {
 }
 
 nav a:hover {
-    color: grey;
-    border-top-style: solid;
+    color: #3D5147;
+    background-color: #E7EDEF;
+    border-top-style: dashed;
     border-bottom-style: solid;
-    text-shadow: darkorange;
+    
 }
 
 #logo {
@@ -45,7 +46,7 @@ nav a:hover {
     width: auto;
     
 }
-
 #home:hover {
     border-bottom-style: none;
+    background: none;
 }

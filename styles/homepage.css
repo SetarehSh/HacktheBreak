@@ -1,9 +1,10 @@
 
 body {
-    background-color: #FFFFFF;
+    background-color: #f3f6f7;
     overflow-x:hidden;
-    font-size: calc(15px + 1vh);
+    font-size: calc(13px + 1vh);
     font-family: 'Pridi';
+    color: #0B0F32;
     
 }
  #websiteStatement{
@@ -28,7 +29,6 @@ body {
     margin-bottom: 30px;
     min-width: 400px;
     align-items: center;
-    
 }
 
 .options li a{
@@ -39,21 +39,14 @@ body {
 h1{
     text-align: center;
 }
-/* animated pic of farmer on the homepage */
-#farmer1{
-    max-height: 700px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
-}   
+ 
 
 button {
     border-radius: 12px;
     min-width: calc(150px + 1px);
     min-height: calc(40px + 1px);
     color: black;
-    background-color: lightsalmon;
+    background-color: #FF9B42;
     font-size: calc(13px + 1vh);
     font-family: 'Pridi';
     margin-right: 10px;
@@ -66,23 +59,24 @@ button {
     width: 70%;
     margin-top: 10px;
     padding-left: 20px;
-    background-color: peachpuff;
+    background-color: #E7EDEF;
     color: black;
-    font-size: calc(10px + 1vh);
+    font-size: calc(8px + 1vh);
     font-family: 'Pridi';
 }
 
 
-/* Start of placeholder CSS to contain each search term entry */
+/* Checkbox to contain each search term entry once user enters their query */
 .searchTermContainer {
-    margin-top: 10px;
-    margin-bottom: 25px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-top: 5px;
     text-align: center;
     border: 2px solid #AAAAAA;
     border-radius: 12px;
-    height: 30px;
-    width: 50%;
-    background-color: peachpuff;
+    height: 40px;
+    width: 30%;
+    background-color: #E7EDEF;
     color: black;
     font-size: calc(10px + 1vh);
     font-family: 'Pridi';
@@ -94,4 +88,13 @@ button {
     display: block;
     text-align: center;
 }
-/* End of placeholder CSS to contain each search term entry */
+
+
+/* animated pic of farmer on the homepage */
+#farmer1{
+    max-height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}  
+

@@ -11,10 +11,10 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: grey;
+    background-color: lightgray;
     width:100%;
-    color:white;
-    font-size: 15px;
+    color: #0B0F32;
+    font-size: calc(8px + 1vh);
 
 }
 
@@ -34,7 +34,6 @@ footer {
 .mediaIcon{
     margin-right: 20px;
     height: 40px;
-    margin-left: -5px;
     margin-top: 5px;
 
 }
