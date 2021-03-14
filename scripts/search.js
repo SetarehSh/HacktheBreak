@@ -30,7 +30,7 @@ function showAddedFood(input){
 
     farmerHtml += "<span class=searchTermText>"+input+"</span>";
 
-    farmerHtml += '<Button class="uncheck">X</Button></li>';
+    farmerHtml += '<Button class="uncheck" onClick="onRemoveClicked(this)">X</Button></li>';
 
     farmerHtml += "</div>";
 
@@ -62,13 +62,16 @@ function searchForFood(){
 
 // i : the index in the inputList
 function clearSearchTerm(index){
-    inputList.splice(index);
+    console.log(inputList);
+    inputList.splice(index, 1);
+    console.log(inputList);
+
     $(".index"+index).remove();
     //Rename the other class indices, and replace them with an index that is one lower (to preserve order)
     for(var i = index+1; i < inputList.length + 1; i++){
         temp = $(".index"+i);
-        temp.removeClass(".index"+i);
-        temp.addClass(".index"+(i-1));
+        temp.removeClass("index"+i);
+        temp.addClass("index"+(i-1));
     }
 }
 
@@ -84,13 +87,15 @@ $("#searchform").submit(function(e) {
     searchForFood();
 });
 
-// When the submit button pressed, send to results
+// When the clear button pressed, send to results
 $("#clearSearchButton").click(function(e) {
     clearAllSearchTerms();
-    console.log("clicked!")
-    console.log(inputList)
 });
 
+// When the remove button pressed, send to results
+function onRemoveClicked(index){
+    clearSearchTerm(index);
+}
 
 // When the enter button is pressed, run addFoodType()
 $(document).ready(function() {
