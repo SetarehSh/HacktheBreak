@@ -22,7 +22,7 @@ body {
    
 }
 .options li{
-    background-color: rgb(247, 240, 205);
+    background-color: lightgray;
     border-radius: 12px;
     padding: 2vh;
     margin: 2em 0;
