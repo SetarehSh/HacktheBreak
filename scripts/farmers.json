@@ -1,7 +1,8 @@
 {
     "farmers":[
         {
-            "name":"Westcoast Farmers", 
+            "name":"Westcoast Farmers",
+            "imgsrc" : "/images/WestcoastFarmers.png",
             "foods": [
                 "apple",
                 "mushroom",
@@ -9,7 +10,8 @@
             ]
         },
         {
-            "name":"Mountain Valley", 
+            "name":"Mountain Valley Farm", 
+            "imgsrc" : "/images/MountainValley.png",
             "foods": [
                 "chicken",
                 "pork",
@@ -18,6 +20,7 @@
         },
         {
             "name":"Crunchy Farms", 
+            "imgsrc" : "/images/CrunchyFarms.png",
             "foods": [
                 "apple"
             ]

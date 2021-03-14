@@ -70,7 +70,7 @@ function displayResults(matchingFarmers){
 
         farmerHtml += "<div class='farmerContainer'>";
 
-        farmerHtml += "<img class='farmerImg' src='/images/placeholder.png'>";
+        farmerHtml += "<img class='farmerImg' src='" + farmer.imgsrc + "'>";
 
         farmerHtml += "<span class=farmerName>" + farmer.name + "</span>";
 
