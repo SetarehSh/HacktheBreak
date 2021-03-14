@@ -1,5 +1,3 @@
-//TODO: Display all matching farms in infinite scrolling fashion
-
 function getUrlParams(){
     var urlParams = new URLSearchParams(window.location.search);
     var foods = urlParams.get('q');
@@ -19,12 +17,6 @@ function readJson(file, callback) {
     }
     rawFile.send(null);
 }
-
-// //usage:
-// readTextFile("/scripts/farmers.json", function(text){
-//     var data = JSON.parse(text);
-//     console.log(data);
-// });
 
 function getMatchingFarmers(){
     //Read JSON file for list of farmers
@@ -58,6 +50,8 @@ function getMatchingFarmers(){
     });
 }
 
+//Uses HTML to create listings the results div.
+//Feel free to pretty this up by changing up the HTML assigned to farmerHtml
 function displayResults(matchingFarmers){
     var div = $("#results");
     var farmerHtml = "";
@@ -66,6 +60,7 @@ function displayResults(matchingFarmers){
     for(var i = 0; i < matchingFarmers.length; i++){
         farmer = matchingFarmers[i];
 
+        //Start of HTML for the listing
         farmerHtml += "<div class='farmerContainer'>";
 
         farmerHtml += "<img class='farmerImg' src='" + farmer.imgsrc + "'>";
@@ -75,6 +70,7 @@ function displayResults(matchingFarmers){
         farmerHtml += "<span class=farmerDescription>" + farmer.listingTitle + "</span>";
 
         farmerHtml += "</div>";
+        //End of HTML for the listing
 
         div.append(farmerHtml);
 
