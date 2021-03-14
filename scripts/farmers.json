@@ -1,10 +1,10 @@
 {
-    "farmers":[
+    "farmers": [
         {
             "id": 0,
-            "name":"Westcoast Farmers",
-            "imgsrc" : "/images/WestcoastFarmers.png",
-            "listingTitle" : "Selling organic foods!",
+            "name": "Westcoast Farmers",
+            "imgsrc": "/images/Farmer 1.png",
+            "listingTitle": "Selling organic foods!",
             "foods": [
                 "apple",
                 "mushroom",
@@ -13,9 +13,9 @@
         },
         {
             "id": 1,
-            "name":"Mountain Valley Farm", 
-            "imgsrc" : "/images/MountainValley.png",
-            "listingTitle" : "Halal meat in bulk!",
+            "name": "Mountain Valley Farm",
+            "imgsrc": "/images/Farmer 1.png",
+            "listingTitle": "Halal meat in bulk!",
             "foods": [
                 "chicken",
                 "pork",
@@ -24,12 +24,12 @@
         },
         {
             "id": 2,
-            "name":"Crunchy Farms", 
-            "imgsrc" : "/images/CrunchyFarms.png",
-            "listingTitle" : "Lots and lots of fresh apples!",
+            "name": "Crunchy Farms",
+            "imgsrc": "/images/Farmer 2.png",
+            "listingTitle": "Lots and lots of fresh apples!",
             "foods": [
                 "apple"
             ]
         }
-      ]
+    ]
 }
