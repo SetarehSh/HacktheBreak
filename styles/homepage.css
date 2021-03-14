@@ -1,4 +1,32 @@
+body{
+    background-color: #E7EDEF;
+    
+}
 
+.wrapper{
+ 
+    padding-top: 2rem;
+    margin: auto;
+}
+main{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 30px;
+    padding: 20px;
+    line-height: 1.1;
+    font-size: large;
+   
+}
+
+p{
+    font-size: large;
+}
+#farmer1{
+    object-fit: contain;
+    width: 600px;
+    height:600px;
+  
+}
 
 
 .options{
@@ -14,4 +42,8 @@
     padding: 2vh;
     margin: 2em 0;
     
+}
+
+h1{
+    text-align: center;
 }
