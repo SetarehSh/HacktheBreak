@@ -30,6 +30,37 @@
             "foods": [
                 "apple"
             ]
+        },
+        {
+            "id": 3,
+            "name": "Northshore Farms",
+            "imgsrc": "/images/Farmer 1.png",
+            "listingTitle": "Very yummy foods!",
+            "foods": [
+                "apple",
+                "mushroom",
+                "onion"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Sustainable Grows",
+            "imgsrc": "/images/Farmer 1.png",
+            "listingTitle": "Sustainable meat!",
+            "foods": [
+                "chicken",
+                "pork",
+                "beef"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Freshy Farms",
+            "imgsrc": "/images/Farmer 2.png",
+            "listingTitle": "Sailish apples in bulk!",
+            "foods": [
+                "apple"
+            ]
         }
     ]
 }
