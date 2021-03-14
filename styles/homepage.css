@@ -1,5 +1,18 @@
-
-
+body {
+    background-color: #FFFFFF;
+    overflow-x:hidden;
+    font-size: calc(10px + 1vh);
+    font-family: 'Pridi';
+    
+}
+ #websiteStatement{
+    padding-left: 200px;
+    padding-right: 200px;
+ }
+ #aboutUs{
+    padding-left: 200px;
+    padding-right: 200px;
+ }
 
 .options{
     list-style-type: none;
@@ -10,7 +23,7 @@
 }
 .options li{
     background-color: rgb(247, 240, 205);
-    border-radius: 25px;
+    border-radius: 12px;
     padding: 2vh;
     margin: 2em 0;
     

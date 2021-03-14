@@ -1,57 +1,51 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-decoration: none;
-}
-
-.header{
-    width:100%;
-    height: 15vh;
-    display: block;
-    background-color: #BD6F29;
-}
-
-.innerHeader{
-    width: 1000px;
-    height: 100%;
-    display: block;
-    background-color:#BD6F29;
+body {
     margin: 0 auto;
+    padding: 0;
 }
 
-.logo{
-    height: 100%;
-    display: table;
-    float:left;
-}
-
-.logo h1{
-    color: white;
-    height:100%;
-    display:table-cell;
-    vertical-align: middle;
-}
-
-.navBar{
-    float: right;
-    height: 100%;
-}
-
-.navBar li{
-    height: 100%;
-    display: table;
-    float: left;
-    padding: 0px 30px;
+nav {
+    width: 100%;
+    max-height: calc(150px + 1vh) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgray;
+    z-index: 5;
     
 }
 
-.navBar li a{
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%; 
-    color:white;
-    font-size: 20px;
+nav ul {
+    display: flex;
+    list-style-type: none;
+    white-space: nowrap;
+    margin-right: 30px;
+}
+
+nav a {
+    color: black; 
+    font-family: 'Pridi', serif;
+    font-size: calc(10px + 1vh);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px;
     
+}
+
+nav a:hover {
+    color: grey;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    text-shadow: darkorange;
+}
+
+#logo {
+    margin-left: 150px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    height: 35vh;
+    width: auto;
+}
+
+#home:hover {
+    border-bottom-style: none;
 }
