@@ -1,0 +1,12 @@
+button {
+    border-radius: 12px;
+    min-width: calc(150px + 1px);
+    min-height: calc(40px + 1px);
+    color: black;
+    background-color: #FF9B42;
+    font-size: calc(13px + 1vh);
+    font-family: 'Pridi';
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
