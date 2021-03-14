@@ -28,10 +28,12 @@ function showAddedFood(input){
     //Add the index in the inputList as a class to keep track
     farmerHtml += "<div class='searchTermContainer index"+(inputList.length-1)+"'>";
 
-    console.log(farmerHtml);
     farmerHtml += "<span class=searchTermText>"+input+"</span>";
 
+    farmerHtml += '<Button class="uncheck">X</Button></li>';
+
     farmerHtml += "</div>";
+
 
     div.append(farmerHtml);
 }
