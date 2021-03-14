@@ -4,7 +4,7 @@ body {
     font-size: calc(13px + 1vh);
     font-family: 'Pridi';
     color: #0B0F32;
-    margin: 30px;
+    
 }
 
 #headerTitle{
@@ -14,19 +14,23 @@ body {
 
 /* Start of placeholder CSS to contain each Farmer entry */
 .farmerContainer {
-    margin: 40px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     padding: 40px;
     font-size: calc(13px + 1vh);
     font-family: 'Pridi';
     background-color: lightgray;
     border-radius: 12px;
+    
 }
 
 .farmerImg {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 40%;
 }
 
 .farmerName {
