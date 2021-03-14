@@ -38,7 +38,7 @@ body {
 h1{
     text-align: center;
 }
-
+/* animated pic of farmer on the homepage */
 #farmer1{
     max-height: 700px;
     display: block;
@@ -55,16 +55,41 @@ button {
     background-color: lightsalmon;
     font-size: calc(13px + 1vh);
     font-family: 'Pridi';
-    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 #searchBar {
     border-radius: 12px;
     height: 30px;
     width: 900px;
     margin-top: 10px;
+    padding-left: 20px;
     background-color: peachpuff;
     color: black;
-    padding-left: 20px;
     font-size: calc(10px + 1vh);
     font-family: 'Pridi';
 }
+
+/* Start of placeholder CSS to contain each search term entry */
+.searchTermContainer {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    border: 2px solid #AAAAAA;
+    border-radius: 12px;
+    height: 30px;
+    width: 500px;
+    background-color: peachpuff;
+    color: black;
+    font-size: calc(10px + 1vh);
+    font-family: 'Pridi';
+    
+}
+
+.searchTermText {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+/* End of placeholder CSS to contain each search term entry */
