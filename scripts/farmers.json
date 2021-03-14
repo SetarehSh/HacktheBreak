@@ -9,7 +9,8 @@
                 "apple",
                 "mushroom",
                 "onion"
-            ]
+            ],
+            "distance": 2.5
         },
         {
             "id": 1,
@@ -20,7 +21,8 @@
                 "chicken",
                 "pork",
                 "beef"
-            ]
+            ],
+            "distance": 3.5
         },
         {
             "id": 2,
@@ -29,7 +31,8 @@
             "listingTitle": "Lots and lots of fresh apples!",
             "foods": [
                 "apple"
-            ]
+            ],
+            "distance": 1.2
         },
         {
             "id": 3,
@@ -40,7 +43,8 @@
                 "apple",
                 "mushroom",
                 "onion"
-            ]
+            ],
+            "distance": 3
         },
         {
             "id": 4,
@@ -51,7 +55,8 @@
                 "chicken",
                 "pork",
                 "beef"
-            ]
+            ],
+            "distance": 5
         },
         {
             "id": 5,
@@ -60,7 +65,8 @@
             "listingTitle": "Sailish apples in bulk!",
             "foods": [
                 "apple"
-            ]
+            ],
+            "distance": 0.8
         }
     ]
 }

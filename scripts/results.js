@@ -69,6 +69,9 @@ function displayResults(matchingFarmers){
 
         farmerHtml += "<span class=farmerDescription>" + farmer.listingTitle + "</span>";
 
+        farmerHtml += "<span class=farmerDescription>Distance: " + farmer.distance + "km</span>";
+
+
         farmerHtml += "</div>";
         //End of HTML for the listing
 
