@@ -1,12 +1,46 @@
-button {
-    border-radius: 12px;
-    min-width: calc(150px + 1px);
-    min-height: calc(40px + 1px);
-    color: black;
-    background-color: #FF9B42;
+body {
+    background-color: #f3f6f7;
+    overflow-x:hidden;
     font-size: calc(13px + 1vh);
     font-family: 'Pridi';
-    margin-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    color: #0B0F32;
+    margin: 30px;
 }
+
+#headerTitle{
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+/* Start of placeholder CSS to contain each Farmer entry */
+.farmerContainer {
+    margin: 40px;
+    padding: 40px;
+    font-size: calc(13px + 1vh);
+    font-family: 'Pridi';
+    background-color: lightgray;
+    border-radius: 12px;
+}
+
+.farmerImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.farmerName {
+    font-weight: bold;
+    font-size: 38pt;
+    display: block;
+    text-align: center;
+}
+
+.farmerDescription {
+    font-size: 30px;
+    display: block;
+    text-align: center;
+}
+/* End of placeholder CSS to contain each Farmer entry */
+
+

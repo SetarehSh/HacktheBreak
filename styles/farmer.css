@@ -1,16 +1,17 @@
 
 .wrapper{
-    background-color: lightgoldenrodyellow;
+    background-color: #E7EDEF;
     max-width: 1100px;
     margin: auto;
-    padding: 10px;
+    padding: 30px;
+    font-size: calc(13px + 1vh);
+    font-family: 'Pridi';
 }
 
 h1{
     font-size: 4rem;
     font-weight: normal;
     text-align: center;
-    
 }
 
 #farmerIntro{
@@ -25,18 +26,27 @@ h1{
 #farmContact{
     display: inline-block;
 }
+
 #order{
-    background-color: orange;
-    border:none;
-    padding: 15px 20px;
-    font-size: 16px;
+    border-radius: 12px;
+    width: 20%;
+    height: 5%;
+    min-width: 40px;
+    min-height: 40px;
+    color: black;
+    background-color: #FF9B42;
+    font-size: calc(10px + 1vh);
+    font-family: 'Pridi';
+    margin: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #ImageGallery {
 
   width: 1000px;
   height: 600px ;
-  border: 10px solid orange;
+  border: 2px solid orange;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: min-content;
@@ -44,8 +54,14 @@ h1{
   grid-gap: 10px;
   padding: 1rem;
   margin:0.5rem;
- justify-content:center;
-  }
+  justify-content:center;
+  justify-self: center;
+  margin-left: 40px;
+}
+#ImageGallery-div{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
 
 #ImageGallery h3{
     grid-column: 1/4;

@@ -3,7 +3,7 @@
     background-color: #E7EDEF;
     max-width: 1100px;
     margin: auto;
-    padding: 10px;
+    padding: 30px;
     font-size: calc(13px + 1vh);
     font-family: 'Pridi';
 }
@@ -16,7 +16,7 @@ h1{
 }
 
 #welcomeGuest{
-    text-align: left;
+    text-align: center;
     font-size: large;
     margin: auto;
     padding-left: 30px;
