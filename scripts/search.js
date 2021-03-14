@@ -2,13 +2,15 @@
 inputList = []
 
 function addFoodType(){
-    input = document.forms["searchform"]["searchbar"].value;
+    input = document.forms["searchForm"]["searchBar"].value;
     input = input.toLowerCase();
 
     inputList.push(input);
 
     console.log(inputList);
-    //TODO: Add selected food items to a list to display. Search button will do the search
+
+    document.forms["searchForm"]["searchBar"].value = "";
+    //TODO: Add selected food items to a list to display.
 }
 
 function searchForFood(){
