@@ -10,6 +10,7 @@ body {
 #headerTitle{
     font-size: 40px;
     margin-left: 50px;
+    text-align: center;
 }
 
 /* Start of placeholder CSS to contain each Farmer entry */
