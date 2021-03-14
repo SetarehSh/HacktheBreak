@@ -31,7 +31,7 @@ $(document).on("click", '.farmerContainer', function (event) {
         if(id == null){
             console.log("Could not find a farm with the name " + farmName);
         } else {
-            window.location.href = "farm.html?id=" + id;
+            window.location.href = "listing.html?id=" + id;
         }
 
     });
