@@ -72,7 +72,7 @@ function displayResults(matchingFarmers){
 
         farmerHtml += "<span class=farmerName>" + farmer.name + "</span>";
 
-        farmerHtml += "<span class=farmerDescription>Details about the farm go here!</span>";
+        farmerHtml += "<span class=farmerDescription>" + farmer.listingTitle + "</span>";
 
         farmerHtml += "</div>";
 

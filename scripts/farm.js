@@ -18,16 +18,35 @@ function readJson(file, callback) {
     rawFile.send(null);
 }
 
-function getFarmer(){
+function getFarmer(callback){
     //Read JSON file for list of farmers
     readJson("/scripts/farmers.json", function(data){
         var farmerId = getUrlParams();
         var farmer;
         for(var i = 0; i < data.farmers.length; i++){
-            if(data.farmer[i].id == farmerId){
-                farmer = data.farmer[i];
+            if(data.farmers[i].id == farmerId){
+                farmer = data.farmers[i];
             }
         }
-        console.log(farmer);
+        callback(farmer);
     });
 }
+
+function displayFarmer(){
+    getFarmer(function (farmer){
+        console.log(farmer);
+
+        // Set the image
+        var image = $("#listingImage");
+        var imageSrc = farmer.imgsrc;
+        image.attr("src", imageSrc);
+
+        // Set the title
+        var title = $("#listingTitle");
+        var farmerTitle = farmer.listingTitle;
+        title.html(farmerTitle);
+
+    });
+}
+
+$(document).ready(displayFarmer());
