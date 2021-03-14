@@ -18,15 +18,16 @@ body {
 
 .options{
     list-style-type: none;
-    justify-content: space-evenly;
-    margin: 30px;
-   
+      
 }
 .options li{
     background-color: lightgray;
     border-radius: 12px;
     padding: 4vh;
-    margin: 2em 0;
+    margin-top: 2em 0;
+    margin-bottom: 30px;
+    min-width: 400px;
+    align-items: center;
     
 }
 
@@ -61,8 +62,8 @@ button {
 }
 #searchBar {
     border-radius: 12px;
-    height: 30px;
-    width: 900px;
+    height: 40px;
+    width: 70%;
     margin-top: 10px;
     padding-left: 20px;
     background-color: peachpuff;
@@ -70,6 +71,7 @@ button {
     font-size: calc(10px + 1vh);
     font-family: 'Pridi';
 }
+
 
 /* Start of placeholder CSS to contain each search term entry */
 .searchTermContainer {
@@ -79,7 +81,7 @@ button {
     border: 2px solid #AAAAAA;
     border-radius: 12px;
     height: 30px;
-    width: 500px;
+    width: 50%;
     background-color: peachpuff;
     color: black;
     font-size: calc(10px + 1vh);
