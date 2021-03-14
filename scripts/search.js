@@ -25,8 +25,10 @@ function showAddedFood(input){
     var div = $("#searchList");
     var farmerHtml = "";
 
-    farmerHtml += "<div class='searchTermContainer'>";
+    //Add the index in the inputList as a class to keep track
+    farmerHtml += "<div class='searchTermContainer index"+(inputList.length-1)+"'>";
 
+    console.log(farmerHtml);
     farmerHtml += "<span class=searchTermText>"+input+"</span>";
 
     farmerHtml += "</div>";
@@ -56,10 +58,35 @@ function searchForFood(){
     }
 }
 
+// i : the index in the inputList
+function clearSearchTerm(index){
+    inputList.splice(index);
+    $(".index"+index).remove();
+    //Rename the other class indices, and replace them with an index that is one lower (to preserve order)
+    for(var i = index+1; i < inputList.length + 1; i++){
+        temp = $(".index"+i);
+        temp.removeClass(".index"+i);
+        temp.addClass(".index"+(i-1));
+    }
+}
+
+function clearAllSearchTerms(){
+    for(var i = inputList.length - 1; i >= 0; i--){
+        clearSearchTerm(i);
+    }
+}
+
 // When the submit button pressed, send to results
 $("#searchform").submit(function(e) {
     e.preventDefault();
     searchForFood();
+});
+
+// When the submit button pressed, send to results
+$("#clearSearchButton").click(function(e) {
+    clearAllSearchTerms();
+    console.log("clicked!")
+    console.log(inputList)
 });
 
 
