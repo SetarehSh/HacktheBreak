@@ -1,3 +1,5 @@
+// Redirects for the results page
+
 function readJson(file, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
@@ -10,7 +12,7 @@ function readJson(file, callback) {
     rawFile.send(null);
 }
 
-// When clicking on a listing, go to the listing detail page
+// When clicking on a listing in results.html, redirect to the listing detail page
 $(document).on("click", '.farmerContainer', function (event) {
     console.log(event.target);
     //Gets the parent container class, then gets its title span, then parses the HTML to get the name of the farm

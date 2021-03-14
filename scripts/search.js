@@ -20,6 +20,7 @@ function addFoodType(){
     }
 }
 
+//Adds HTML to show a list item for each search word
 function showAddedFood(input){
     var div = $("#searchList");
     var farmerHtml = "";

@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="./styles/homepage.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tinos">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Changa">
@@ -41,7 +43,27 @@
                     directly, conveniently, and safely. </p>
 
                 <ul class="options">
-                    <li><a href="chief.html">Start Browsing for Listing</a>  </li>
+                    <li>
+                        <!--Div for the searching functionality-->
+                        <div class="searchBody">
+
+                            <!--Form for the user to input their search terms-->
+                            <form id="searchform" name="searchForm" action="#">
+                              <label for="searchbar">Type in the product you're looking for</label>
+                              <input type="text" id="searchBar" name="searchBar"><br><br>
+                            </form>
+                      
+                            <!--Dynamically displays a list of all of the search terms the user has added-->
+                            <div id=searchList>
+                      
+                            </div>
+                      
+                            <!--Redirects users to results.html to show a list of matching farmers-->
+                            <button type="submit" form="searchform" value="Submit">Submit</button>
+                      
+                          </div>
+                        
+                        <!--<a href="chief.html">Start Browsing for Listing</a>  --></li>
                     <li> <a href="farmer.html">Login as a Farmer</a>  </li>
                 </ul>
             </div>
@@ -101,5 +123,10 @@
     </footer>
 
 </body>
+
+
+<!--Javascript for searching-->
+<script src="scripts/search.js"></script>
+<script src="scripts/redir.js"></script>
 
 </html>
