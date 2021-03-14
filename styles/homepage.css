@@ -1,0 +1,48 @@
+
+body {
+    background-color: #FFFFFF;
+    overflow-x:hidden;
+    font-size: calc(10px + 1vh);
+    font-family: 'Pridi';
+    
+}
+ #websiteStatement{
+    padding-left: 200px;
+    padding-right: 200px;
+ }
+ #aboutUs{
+    padding-left: 200px;
+    padding-right: 200px;
+ }
+
+
+.options{
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+  
+   
+}
+.options li{
+    background-color: lightgray;
+    border-radius: 12px;
+    padding: 2vh;
+    margin: 2em 0;
+    
+}
+
+.options li a{
+    color: black;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+#farmer1{
+    padding-left: 200px;
+    /* padding-right: 200px; */
+    margin:auto;
+}   

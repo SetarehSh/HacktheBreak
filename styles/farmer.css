@@ -1,0 +1,68 @@
+
+.wrapper{
+    background-color: lightgoldenrodyellow;
+    max-width: 1100px;
+    margin: auto;
+    padding: 10px;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: normal;
+    text-align: center;
+    
+}
+
+#farmerIntro{
+/* background-color: lightblue; */
+ text-align: left;
+ font-size: large;
+ margin: auto;
+ padding-left: 30px;
+ padding-right: 30px;
+}
+
+#farmContact{
+    display: inline-block;
+}
+#order{
+    background-color: orange;
+    border:none;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+#ImageGallery {
+
+  width: 1000px;
+  height: 600px ;
+  border: 10px solid orange;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: min-content;
+  grid-auto-rows: 150px;
+  grid-gap: 10px;
+  padding: 1rem;
+  margin:0.5rem;
+ justify-content:center;
+  }
+
+#ImageGallery h3{
+    grid-column: 1/4;
+}
+
+#ImageGallery img{
+    object-fit: cover;
+    height: 150px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+/* image animation */
+#ImageGallery img{
+    transition: transform 1s;
+}
+
+#ImageGallery img:hover{
+    transform: scale(1.15);
+}
