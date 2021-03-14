@@ -44,7 +44,7 @@ h1{
 }
 
 #ImageGallery {
-
+  
   width: 1000px;
   height: 600px;
   
@@ -71,7 +71,7 @@ h1{
 #ImageGallery img{
     object-fit: cover;
     height: 150px;
-    width: 300px;
+    width: 325px;
     box-sizing: border-box;
 }
 
