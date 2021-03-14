@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Search</title>
+  <meta charset="utf-8" />
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <div id="content" class="content">
+
+    <header>
+      <h1 id="headerTitle">Search</h1>
+    </header>
+
+    <div class="body">
+
+      <!--Form for the user to input their search terms-->
+      <form id="searchform" name="searchForm" action="#">
+        <label for="searchbar">Type in the product you're looking for</label>
+        <input type="text" id="searchBar" name="searchBar"><br><br>
+      </form>
+
+      <!--Dynamically displays a list of all of the search terms the user has added-->
+      <div id=searchList>
+
+      </div>
+
+      <!--Redirects users to results.html to show a list of matching farmers-->
+      <button type="submit" form="searchform" value="Submit">Submit</button>
+
+    </div>
+
+    <script src="scripts/redir.js"></script>
+    <script src="scripts/search.js"></script>
+  </div>
+
+</body>
+
+</html>
