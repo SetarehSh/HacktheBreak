@@ -17,11 +17,18 @@
 
     <div class="body">
 
+      <!--Form for the user to input their search terms-->
       <form id="searchform" name="searchForm" action="#">
         <label for="searchbar">Type in the product you're looking for</label>
         <input type="text" id="searchBar" name="searchBar"><br><br>
       </form>
 
+      <!--Dynamically displays a list of all of the search terms the user has added-->
+      <div id=searchList>
+
+      </div>
+
+      <!--Redirects users to results.html to show a list of matching farmers-->
       <button type="submit" form="searchform" value="Submit">Submit</button>
 
     </div>

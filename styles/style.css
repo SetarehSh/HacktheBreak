@@ -28,3 +28,20 @@
     text-align: center;
 }
 /* End of placeholder CSS to contain each Farmer entry */
+
+/* Start of placeholder CSS to contain each search term entry */
+.searchTermContainer {
+    margin: 20px;
+    padding: 20px;
+    font-family: "Open Sans";
+    border: 2px solid #AAAAAA;
+    background-color: #D0F0C0;
+    border-radius: 2em;
+}
+
+.searchTermText {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+/* End of placeholder CSS to contain each search term entry */

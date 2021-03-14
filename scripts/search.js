@@ -2,15 +2,35 @@
 inputList = []
 
 function addFoodType(){
+    // Get value from search bar
     input = document.forms["searchForm"]["searchBar"].value;
     input = input.toLowerCase();
 
-    inputList.push(input);
+    // Validate input
+    if(input.length != 0){
+        inputList.push(input);
 
-    console.log(inputList);
+        console.log("Input list: " + inputList);
 
-    document.forms["searchForm"]["searchBar"].value = "";
-    //TODO: Add selected food items to a list to display.
+        // Clear the search bar
+        document.forms["searchForm"]["searchBar"].value = "";
+    
+        // Display input word in a neat HTML list
+        showAddedFood(input);
+    }
+}
+
+function showAddedFood(input){
+    var div = $("#searchList");
+    var farmerHtml = "";
+
+    farmerHtml += "<div class='searchTermContainer'>";
+
+    farmerHtml += "<span class=searchTermText>"+input+"</span>";
+
+    farmerHtml += "</div>";
+
+    div.append(farmerHtml);
 }
 
 function searchForFood(){
