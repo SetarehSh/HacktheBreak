@@ -12,10 +12,11 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: lightgray;
+    background-color: #CEDADF;
     width:100%;
     color: #0B0F32;
     font-size: calc(8px + 1vh);
+    font-family: 'Pridi';
 
 }
 

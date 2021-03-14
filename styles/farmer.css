@@ -6,6 +6,7 @@
     padding: 30px;
     font-size: calc(13px + 1vh);
     font-family: 'Pridi';
+    color: #0B0F32;
 }
 
 h1{
@@ -43,7 +44,7 @@ h1{
 }
 
 #ImageGallery {
-
+  
   width: 1000px;
   height: 600px;
   
