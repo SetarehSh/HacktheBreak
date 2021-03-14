@@ -19,17 +19,13 @@ body {
 .options{
     list-style-type: none;
     justify-content: space-evenly;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    
+    margin: 30px;
    
 }
 .options li{
     background-color: lightgray;
     border-radius: 12px;
-    padding: 2vh;
+    padding: 4vh;
     margin: 2em 0;
     
 }
@@ -64,5 +60,11 @@ button {
 #searchBar {
     border-radius: 12px;
     height: 30px;
-    width: 300px;
+    width: 900px;
+    margin-top: 10px;
+    background-color: peachpuff;
+    color: black;
+    padding-left: 20px;
+    font-size: calc(10px + 1vh);
+    font-family: 'Pridi';
 }

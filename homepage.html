@@ -50,7 +50,10 @@
                             <!--Form for the user to input their search terms-->
                             <form id="searchform" name="searchForm" action="#">
                                 <label for="searchbar">Type in the product you're looking for</label>
-                                <input type="text" id="searchBar" name="searchBar"><br><br>
+                                <div>
+                                    <input type="text" placeholder="Enter produce name and hit enter..." id="searchBar"
+                                        name="searchBar"><br><br>
+                                </div>
                             </form>
 
                             <!--Dynamically displays a list of all of the search terms the user has added-->
@@ -60,6 +63,8 @@
 
                             <!--Redirects users to results.html to show a list of matching farmers-->
                             <button type="submit" form="searchform" value="Submit">Submit</button>
+                            <!--FIX THIS: CLEARS ALL USER SEARCH QUERIES-->
+                            <button type="clear" form="searchform" value="Clear">Clear</button>
 
                         </div>
 
