@@ -68,9 +68,9 @@ function clearSearchTerm(index){
 
     $(".index"+index).remove();
     //Rename the other class indices, and replace them with an index that is one lower (to preserve order)
-    for(var i = index+1; i < inputList.length + 1; i++){
+    for(var i = index; i < inputList.length + 1; i++){
         temp = $(".index"+i);
-        temp.removeClass("index"+i);
+        temp.removeClass("index"+i);    
         temp.addClass("index"+(i-1));
     }
 }
@@ -93,9 +93,10 @@ $("#clearSearchButton").click(function(e) {
 });
 
 // When the remove button pressed, send to results
-function onRemoveClicked(index){
+function onRemoveClicked(button){
+    index = button.parentElement.className.split(" ")[1].substring(5);
     clearSearchTerm(index);
-}
+}   
 
 // When the enter button is pressed, run addFoodType()
 $(document).ready(function() {
